@@ -7,7 +7,7 @@ def get_chiste():
 
     return data["value"]
 
-""" Parseo del Contenido """
+""" Parseo del Contenido IP's | Hash """
 def get_ips(content):
     array_ips = []
     for ips in iocextract.extract_ips(content):
@@ -19,7 +19,3 @@ def get_hash(content):
     for hashes in iocextract.extract_hashes(content):
         array_hashes.append(hashes)
     return array_hashes.append(hash)
-
-
-ips = get_ips(content)
-hashes = get_hash(content)

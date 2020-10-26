@@ -1,8 +1,11 @@
 from telegram.ext import Updater, CommandHandler, ConversationHandler, MessageHandler, Filters
 from engine import get_chiste
 import yaml, logging
-""" Variable para Manejo de Estados en la Conversacion """
+
+""" Variable Semaforo Estados en la Conversacion """
 INPUT_TEXT = 0 
+
+""" Funciones """
 def start(update, context):
     logger.info('He recibido un comando start')
     update.message.reply_text('¡Bienvenido al Actualizador de Compromisos %s!' % update.message.from_user.name)
@@ -18,6 +21,7 @@ def updateIoc(update, context):
     update.message.reply_text('Se recibio el IoC, procederemos a Parsearlo.')
     ConversationHandler.END
 
+""" Main del Programa """
 if __name__ == '__main__':
 
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)

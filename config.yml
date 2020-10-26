@@ -1,2 +1,2 @@
 telegram:
-    token: '1339119499:AAHYsbtckTY001-5sQ1txe84269bQ6syiQo'
+    token: os.getenv("TOKEN")
