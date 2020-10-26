@@ -11,6 +11,12 @@ Add your IoC to your Antivirus Console & Firewall by a message.
 
 ### Steps
 
+#### Download the Proyect
+
+```bash
+git clone git@github.com:safernandez666/TelegramBot.git
+```
+
 #### Build the Image
 
 ```bash
