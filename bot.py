@@ -1,6 +1,6 @@
 from telegram.ext import Updater, CommandHandler, ConversationHandler, MessageHandler, Filters
 from engine import get_chiste
-import yaml, logging
+import yaml, logging, os
 
 """ Variable Semaforo Estados en la Conversacion """
 INPUT_TEXT = 0 
@@ -27,12 +27,8 @@ if __name__ == '__main__':
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger('nAutomaticBot')
     
-    """ Cargamos las Configuraciones """
-    with open("config.yml", "r") as ymlfile:
-        cfg = yaml.load(ymlfile)
-
     """ Llave API para conectarse a Telegram """
-    updater = Updater(token=cfg["telegram"]["token"], use_context=True)
+    updater = Updater(token=os.getenv("TOKEN"), use_context=True)
 
     dp = updater.dispatcher
 
