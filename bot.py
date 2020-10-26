@@ -19,7 +19,7 @@ def updateIoc(update, context):
     logger.info('Se recibio el Text a Parsear')
     text = update.message.text 
     logger.info('Las Direcciones IP: %s' % get_ips(text))
-    update.message.reply_text('Se recibio el IoC, procederemos a Parsearlo.')
+    update.message.reply_text('Se recibio el IoC, procederemos a aplicar los siguientes cambios.Direcciones IPs %s' % get_ips(text))
     ConversationHandler.END
 
 """ Main del Programa """

@@ -1,5 +1,5 @@
 import requests, json, iocextract
-
+""" Chiste de Prueba """
 def get_chiste():
 
     joke=requests.get('https://api.chucknorris.io/jokes/random')
@@ -18,4 +18,4 @@ def get_hash(content):
     array_hashes = []
     for hashes in iocextract.extract_hashes(content):
         array_hashes.append(hashes)
-    return array_hashes.append(hash)
+    return array_hashes
