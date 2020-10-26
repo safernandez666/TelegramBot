@@ -1,5 +1,5 @@
 from telegram.ext import Updater, CommandHandler, ConversationHandler, MessageHandler, Filters
-from engine import get_chiste
+from engine import get_chiste, get_ips, get_hash
 import yaml, logging, os
 
 """ Variable Semaforo Estados en la Conversacion """
@@ -18,7 +18,7 @@ def ioc(update, context):
 def updateIoc(update, context):
     logger.info('Se recibio el Text a Parsear')
     text = update.message.text 
-    logger.info('El Texto: %s' % text)
+    logger.info('Las Direcciones IP: %s' % get_ips(text))
     update.message.reply_text('Se recibio el IoC, procederemos a Parsearlo.')
     ConversationHandler.END
 
