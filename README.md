@@ -13,7 +13,7 @@ Add your IoC to your Antivirus Console & Firewall by a message.
 #### Build the Image
 
 ```bash
-docker build -t web .
+docker build -t bot .
 ```
 
 #### Run the Container
@@ -26,4 +26,4 @@ Dialogue between Bot and the Operator, where you are informed of directions to p
 
 <img src="screenshots/TelegramDialogo.png" width="400" >
 
-<img src="screenshots/Log.png" width="600" >
+<img src="screenshots/Log.png" width="800" >
