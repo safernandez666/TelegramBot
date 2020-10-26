@@ -12,6 +12,7 @@ def start(update, context):
 def chiste(update, context):
 	update.message.reply_text(get_chiste())
 def ioc(update, context):
+    logger.info('Dialogo IOC')
     update.message.reply_text('Es necesario que me pases el mensaje para parsearlo %s.' % update.message.from_user.name)
     return INPUT_TEXT
 def updateIoc(update, context):
