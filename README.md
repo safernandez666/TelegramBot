@@ -5,9 +5,9 @@ Add your IoC to your Antivirus Console & Firewall by a message.
 ### Create your bot with BotFather & generate your Token
 
 [How To](https://core.telegram.org/bots)
-
+<p align="center">
 <img src="screenshots/BotTelegram.png" width="400" >
-
+</p>
 ### Steps
 
 #### Build the Image
