@@ -44,11 +44,11 @@ Depending on the integration you want to do, CrowdStrike, Trend Micro, Palo Alto
 Sending IoC to the Bot
 
 <p align="center">
-<img src="screenshots/Carga.png" width="400" >
+<img src="screenshots/Carga.PNG" width="400" >
 </p>
 
 Impact on Apex One Trend Micro
 
 <p align="center">
-<img src="screenshots/Trend.jpg" width="800" >
+<img src="screenshots/Trend.JPG" width="800" >
 </p>
