@@ -37,4 +37,18 @@ Dialogue between Bot and the Operator, where you are informed of directions to p
 <img src="screenshots/Log.png" width="800" >
 </p>
 
+#### Working
+
 Depending on the integration you want to do, CrowdStrike, Trend Micro, Palo Alto, etc. you can develop the method in engine.py once the parsing is done.
+
+Sending IoC to the Bot
+
+<p align="center">
+<img src="screenshots/Carga.png" width="400" >
+</p>
+
+Impact on Apex One Trend Micro
+
+<p align="center">
+<img src="screenshots/Trend.jpg" width="800" >
+</p>
