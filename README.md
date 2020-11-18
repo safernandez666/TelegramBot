@@ -44,7 +44,7 @@ Depending on the integration you want to do, CrowdStrike, Trend Micro, Palo Alto
 Sending IoC to the Bot
 
 <p align="center">
-<img src="screenshots/Carga.png" width="400" >
+<img src="screenshots/Captura de Pantalla 2020-11-17 a la(s) 21.08.19.png" width="400" >
 </p>
 
 Impact on Apex One Trend Micro
