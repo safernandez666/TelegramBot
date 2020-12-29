@@ -1,6 +1,7 @@
 from telegram.ext import Updater, CommandHandler, ConversationHandler, MessageHandler, Filters
 from engine import get_chiste, get_ips, get_hash
-import yaml, logging, os
+import yaml, logging, os, time
+import schedule
 
 """ Variable Semaforo Estados en la Conversacion """
 INPUT_TEXT = 0 
@@ -10,7 +11,8 @@ def start(update, context):
     logger.info('He recibido un comando start')
     update.message.reply_text('¡Bienvenido al Actualizador de Compromisos %s!' % update.message.from_user.name)
 def chiste(update, context):
-	update.message.reply_text(get_chiste())
+    logger.info('Consultando API Chiste')
+    update.message.reply_text(get_chiste())
 def ioc(update, context):
     logger.info('Dialogo IOC')
     update.message.reply_text('Es necesario que me pases el mensaje para parsearlo %s.' % update.message.from_user.name)
@@ -27,10 +29,9 @@ if __name__ == '__main__':
 
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     logger = logging.getLogger('nAutomaticBot')
-    
-    """ Llave API para conectarse a Telegram """
-    updater = Updater(token=os.getenv("TOKEN"), use_context=True)
 
+    """ Llave API para conectarse a Telegram """
+    updater = Updater(token=os.getenv("TOKEN_TELEGRAM"), use_context=True)
     dp = updater.dispatcher
 
     """ Handler's """

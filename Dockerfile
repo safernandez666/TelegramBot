@@ -5,5 +5,5 @@ WORKDIR /code
 ADD . /code/  
 RUN pip install -r requirements.txt  
 
-EXPOSE 5000  
-CMD ["python", "/code/bot.py"]`
+RUN chmod a+x run.sh
+CMD ["/code/run.sh"]`
