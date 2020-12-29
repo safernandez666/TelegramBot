@@ -26,7 +26,7 @@ docker build -t bot .
 #### Run the Container
 
 ```bash
-docker run -e TOKEN="YOUR_TOKEN" bot  
+docker run -e TOKEN_TELEGRAM="YOUR_TELEGRAM_TOKEN" -e TOKEN_VULDB="YOUR_VULDB_TOKEN" bot  
 ```
 
 Dialogue between Bot and the Operator, where you are informed of directions to parse and impact the consoles.
@@ -52,3 +52,12 @@ Impact on Apex One Trend Micro
 <p align="center">
 <img src="screenshots/Trend.png" width="800" >
 </p>
+
+Sending CVE's Of the Day
+
+
+You can chenge the hour on send.py. I setting at 09:00 AM.
+
+```bash
+schedule.every().day.at("09:00").do(send_message, token, chat_id, get_notification()) 
+```
