@@ -62,7 +62,9 @@ To consult the [VulDB](https://vuldb.com/) API and obtain the CVE's, you must ge
 <img src="screenshots/Vuldb.jpg" width="800" >
 </p>
 
-You can chenge the hour on send.py. I setting at 09:00 AM.
+You can change the message time by modifying the following function found in send.py.
+
+By default the message will be sent at 09:00 AM.
 
 ```bash
 schedule.every().day.at("09:00").do(send_message, token, chat_id, get_notification()) 
