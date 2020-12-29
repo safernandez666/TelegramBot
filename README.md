@@ -30,6 +30,7 @@ docker run -e TOKEN_TELEGRAM="YOUR_TELEGRAM_TOKEN" -e TOKEN_VULDB="YOUR_VULDB_TO
 ```
 
 Dialogue between Bot and the Operator, where you are informed of directions to parse and impact the consoles.
+
 <p align="center">
 <img src="screenshots/TelegramDialogo.png" width="400" >
 </p>
@@ -55,6 +56,11 @@ Impact on Apex One Trend Micro
 
 Sending CVE's Of the Day
 
+To consult the VulDB API and obtain the CVE's, you must generate a user and obtain the API Key. You will have the possibility to filter by vendor modifying your scope.
+
+<p align="center">
+<img src="screenshots/Vuldb.jpg" width="800" >
+</p>
 
 You can chenge the hour on send.py. I setting at 09:00 AM.
 
