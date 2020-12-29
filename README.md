@@ -42,21 +42,21 @@ Dialogue between Bot and the Operator, where you are informed of directions to p
 
 Depending on the integration you want to do, CrowdStrike, Trend Micro, Palo Alto, etc. you can develop the method in engine.py once the parsing is done.
 
-Sending IoC to the Bot
+##Sending IoC to the Bot
 
 <p align="center">
 <img src="screenshots/Carga.png" width="400" >
 </p>
 
-Impact on Apex One Trend Micro
+##Impact on Apex One Trend Micro
 
 <p align="center">
 <img src="screenshots/Trend.png" width="800" >
 </p>
 
-Sending CVE's Of the Day
+##Sending CVE's Of the Day
 
-To consult the VulDB API and obtain the CVE's, you must generate a user and obtain the API Key. You will have the possibility to filter by vendor modifying your scope.
+To consult the [VulDB](https://vuldb.com/) API and obtain the CVE's, you must generate a user and obtain the API Key. You will have the possibility to filter by vendor modifying your scope.
 
 <p align="center">
 <img src="screenshots/Vuldb.jpg" width="800" >
