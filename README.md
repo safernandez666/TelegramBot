@@ -46,7 +46,7 @@ Dialogue between Bot and the Operator, where you are informed of directions to p
 
 ## Working :robot:
 
-Depending on the integration you want to do, CrowdStrike, Trend Micro, Palo Alto, etc. you can develop the method in engine.py once the parsing is done.
+Depending on the integration you want to do, CrowdStrike, Trend Micro, Palo Alto, etc. you can develop the method in **engine.py** once the parsing is done.
 
 ### Sending IoC to the Bot
 
@@ -68,7 +68,7 @@ To consult the [VulDB](https://vuldb.com/) API and obtain the CVE's, you must ge
 <img src="screenshots/Vuldb.jpg" width="800" >
 </p>
 
-You can change the message time by modifying the following function found in send.py.
+You can change the message time by modifying the following function found in **send.py**.
 
 By default the message will be sent at 09:00 AM.
 
