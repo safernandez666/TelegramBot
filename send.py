@@ -16,7 +16,7 @@ def get_vulnerabilities(json, today):
             str_titulo = ("TITULO: %s" % json['result'][i]['entry']['title'])
             str_id = ("ID: %s" % json['result'][i]['source']['cve']['id'])
             str_riesgo = ("RIESGO: %s" % json['result'][i]['vulnerability']['risk']['name'])
-            texto_string = '\n' + str_titulo + '\n' + str_id + '\n' + str_riesgo
+            texto_string = '\n' + str_titulo + '\n' + str_id + '\n' + str_riesgo + '\n'
             texto = texto + texto_string
     return texto
 
