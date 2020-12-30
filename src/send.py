@@ -47,7 +47,7 @@ json = json.loads(json_data)
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('nAutomaticBot')
 
-schedule.every().day.at("09:00").do(send_message, token, chat_id, get_notification())
+schedule.every().day.at("14:00").do(send_message, token, chat_id, get_notification())
 
 
 while True:

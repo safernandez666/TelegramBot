@@ -20,8 +20,14 @@ def ioc(update, context):
 def updateIoc(update, context):
     logger.info('Se recibio el Text a Parsear')
     text = update.message.text 
-    logger.info('Las Direcciones IP: %s' % get_ips(text))
-    update.message.reply_text('Se recibio el IoC, procederemos a aplicar los siguientes cambios.Direcciones IPs %s' % get_ips(text))
+    direcciones_ip = get_ips(text)
+    hashes = get_hash(text)
+    if len(direcciones_ip) != 0:
+        logger.info('Las Direcciones IP: %s' % direcciones_ip)
+        update.message.reply_text('Se recibio el IoC, procederemos a aplicar los siguientes cambios.Direcciones IPs: %s' % direcciones_ip)
+    if len(hashes) != 0:
+        logger.info('Los Hash: %s' % hashes)
+        update.message.reply_text('Se recibio el IoC, procederemos a aplicar los siguientes cambios. Hashes: %s' % hashes)
     ConversationHandler.END
 
 """ Main del Programa """
