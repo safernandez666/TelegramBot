@@ -35,7 +35,7 @@ Dialogue between Bot and the Operator, where you are informed of directions to p
 <img src="screenshots/TelegramDialogo.png" width="400" >
 </p>
 <p align="center">
-<img src="screenshots/Log.png" width="800" >
+<img src="screenshots/TelegramBot.jpg" width="800" >
 </p>
 
 ## Working
@@ -69,3 +69,9 @@ By default the message will be sent at 09:00 AM.
 ```bash
 schedule.every().day.at("09:00").do(send_message, token, chat_id, get_notification()) 
 ```
+
+Now you can have coffee :coffee: checking what vulnerability should be addressed.
+
+<p align="center">
+<img src="screenshots/Reporte.jpg" width="800" >
+</p>
