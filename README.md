@@ -77,3 +77,11 @@ Now you can have coffee :coffee: checking what vulnerability should be addressed
 <p align="center">
 <img src="screenshots/Reporte.jpg" width="400" >
 </p>
+
+To send the message it is necessary to obtain the chat_id. The way to obtain it is as follows.
+
+```bash
+https://api.telegram.org/bot<YourBOTToken>/getUpdates
+```
+
+I hope it helps you, remember that I am not Dev.

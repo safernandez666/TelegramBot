@@ -7,5 +7,5 @@ WORKDIR /code
 ADD . /code/  
 RUN pip install -r requirements.txt  
 
-RUN chmod a+x run.sh
-CMD ["/code/run.sh"]`
+RUN chmod a+x scripts/run.sh
+CMD ["/code/scripts/run.sh"]`

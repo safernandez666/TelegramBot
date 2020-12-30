@@ -6,7 +6,7 @@ import json, logging, time, telegram, os, schedule
 """ Variables """
 today = datetime.today().strftime('%Y%m%d')
 token = os.getenv("TOKEN_TELEGRAM")
-chat_id = 390771484
+chat_id = "YOUR_CHATID"
 
 """ Funciones """
 def get_vulnerabilities(json, today):
