@@ -1,3 +1,7 @@
+<p align="center">
+<img src="screenshots/Banner.png" width="400" >
+</p>
+
 # Telegram IoC Bot :robot:
 
 Add your IoC to your Antivirus and Firewall Console by message. The Bot will take care of the hard work.
