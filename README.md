@@ -1,4 +1,4 @@
-# Telegram IoC Bot
+# Telegram IoC Bot :robot:
 
 Add your IoC to your Antivirus Console & Firewall by a message.
 
@@ -38,7 +38,7 @@ Dialogue between Bot and the Operator, where you are informed of directions to p
 <img src="screenshots/TelegramBot.jpg" width="800" >
 </p>
 
-## Working
+## Working :robot:
 
 Depending on the integration you want to do, CrowdStrike, Trend Micro, Palo Alto, etc. you can develop the method in engine.py once the parsing is done.
 
