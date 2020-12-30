@@ -10,13 +10,13 @@ chat_id = 390771484
 
 """ Funciones """
 def get_vulnerabilities(json, today):
-    texto = "REPORTE DE VULNERABILIDADES DEL %s' % datetime.today().strftime('%d-%m-%Y'))" + '\n'
+    texto = "REPORTE DE VULNERABILIDADES DEL %s" % datetime.today().strftime('%d-%m-%Y') + '\n'
     for i in range (0, len (json['result'])):
         if(json['result'][i]['advisory']['date'] < today):
             str_titulo = ("TITULO: %s" % json['result'][i]['entry']['title'])
             str_id = ("ID: %s" % json['result'][i]['source']['cve']['id'])
             str_riesgo = ("RIESGO: %s" % json['result'][i]['vulnerability']['risk']['name'])
-            texto_string = str_titulo + '\n' + str_id + '\n' + str_riesgo
+            texto_string = '\n' + str_titulo + '\n' + str_id + '\n' + str_riesgo
             texto = texto + texto_string
     return texto
 
