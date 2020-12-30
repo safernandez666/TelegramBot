@@ -1,6 +1,8 @@
 # Telegram IoC Bot :robot:
 
-Add your IoC to your Antivirus Console & Firewall by a message.
+Add your IoC to your Antivirus and Firewall Console by message. The Bot will take care of the hard work.
+
+You can also keep updated with the list of Vulnerabilities of each day.
 
 ### Create your bot with BotFather & generate your Token
 
