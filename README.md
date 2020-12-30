@@ -1,5 +1,5 @@
 <p align="center">
-<img src="screenshots/Banner.png" width="800" >
+<img src="screenshots/Banner.png" width="1024" >
 </p>
 
 # Telegram IoC Bot :robot:
