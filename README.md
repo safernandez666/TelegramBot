@@ -84,4 +84,4 @@ To send the message it is necessary to obtain the chat_id. The way to obtain it 
 https://api.telegram.org/bot<YourBOTToken>/getUpdates
 ```
 
-I hope it helps you, remember that I am not Dev.
+Or add @get_id_bot and ask! I hope it helps you, remember that I am not Dev.
