@@ -73,5 +73,5 @@ schedule.every().day.at("09:00").do(send_message, token, chat_id, get_notificati
 Now you can have coffee :coffee: checking what vulnerability should be addressed.
 
 <p align="center">
-<img src="screenshots/Reporte.jpg" width="800" >
+<img src="screenshots/Reporte.jpg" width="400" >
 </p>
