@@ -6,7 +6,7 @@ import json, logging, time, telegram, os, schedule
 """ Variables """
 today = datetime.today().strftime('%Y%m%d')
 token = os.getenv("TOKEN_TELEGRAM")
-chat_id = "YOUR_CHATID"
+chat_id = 390771484
 
 """ Funciones """
 def get_vulnerabilities(json, today):
@@ -46,8 +46,10 @@ json = json.loads(json_data)
 """ Logging """
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('nAutomaticBot')
+logging.getLogger('schedule').setLevel(logging.CRITICAL + 10)
 
-schedule.every().day.at("14:00").do(send_message, token, chat_id, get_notification())
+""" Schedule Event """
+schedule.every().day.at("14:38").do(send_message, token, chat_id, get_notification())
 
 
 while True:
