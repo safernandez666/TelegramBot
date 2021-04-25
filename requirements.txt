@@ -24,7 +24,7 @@ pycvesearch==1.0.1
 pylint==2.6.0
 python-telegram-bot==13.1
 pytz==2020.5
-PyYAML==5.3.1
+PyYAML==5.4
 regex==2020.11.13
 requests==2.25.0
 schedule==0.6.0
